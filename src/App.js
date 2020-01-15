@@ -7,7 +7,7 @@ class App extends Component {
       monsters: []
     };
   }
-  componentDidMount(){
+  componentDidMount(){ 
     fetch('http://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
     .then(users => this.setState({monsters: users})) 
